@@ -1,68 +1,67 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* { 
+  margin: 2px; 
+  padding: 2px; 
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html,
+body {
+  height: 100%; 
+  width: 100%; 
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: rgb(23, 22, 22); 
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.parent { 
+  padding: 20px;
+  display: flex; /* Enables Flexbox layout for its direct children */
+  flex-wrap: wrap; /* Allows children (cards) to wrap to the next line if the container is too narrow */
+  justify-content: center; /* Horizontally centers the children (cards) along the main axis of the flex container */
+  gap:20px; /* Adds space between the children (cards) */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.card { 
+  width: 250px;
+  border: 2px solid #ffffff;
+  text-align: center; /* Centers inline content (like text) within the card */
+  padding: 20px; 
+  border-radius: 5px; 
+  background-color: rgb(61, 60, 60); 
+  color: #ffffff;
+  display: flex; 
+  flex-direction: column; /* Stacks the children vertically */
+  align-items: center; /* Horizontally centers the children along the cross axis (left/right centering in a column layout) */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.image-profile { 
+  width: 100px; 
+  height: 100px; 
+  overflow: hidden; /* Ensures any part of the image extending outside this container is clipped */
+  margin-bottom: 15px; /* Adds vertical space below the photo section */
+}
+
+.image-profile img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Ensures the image covers the entire area without distortion (may crop parts of the image) */
+  border: 2px solid #ffffff; 
+  border-radius: 50%; 
+  display: block; /* Ensures the image behaves as a block-level element, which helps with layout */
+}
+
+.card button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px; 
+  padding: 10px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Sets a specific bold font family for the button text */
+  font-size: 20px;
+}
+
+.card button:hover {
+  background-color: red;
+  transition: transform 0.2s ease; /* Smooth transition for the transform property */
+  transform: scale(1.1); /* Scales the image up to 110% of its original size */
 }
