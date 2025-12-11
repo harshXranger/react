@@ -1,6 +1,13 @@
 npm create vite    //to create folder in react
 
-git push origin main  //update the github
+
+
+
+1.git add file
+2.git commit -m "Updated project features or fixes"     //update the github
+3.git push origin main  
+
+
 
 rafce              // shortcut for for write a funvtion with react import statment
 
