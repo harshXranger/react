@@ -3,9 +3,9 @@ npm create vite    //to create folder in react
 
 
 
-1.git add file
-2.git commit -m "Updated project features or fixes"     //update the github
-3.git push origin main  
+git add file
+git commit -m "Updated project features or fixes"     //update the github
+git push origin main  
 
 
 
