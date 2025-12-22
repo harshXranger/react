@@ -13,3 +13,4 @@ rafce              // shortcut for for write a funvtion with react import statme
 
 npm run dev       // TO run the file
 
+npm i react-router-dom // to import router.dom

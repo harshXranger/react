@@ -1,0 +1,32 @@
+
+h1{
+  color: black;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-decoration: underline;
+  position: absolute;
+  
+}
+.Navbar {
+  
+  padding: 15px 40px;
+  background-color: #000000;
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+}
+body{
+  height: 100%;
+  width: 100%;
+
+}
+*{
+  margin: 0;
+  color: white;
+  font-family: monospace;
+  font-size: large;
+}
